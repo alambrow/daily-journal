@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>NSS Daily Journal: Alex Lambrow</title>
+</head>
+<body>
+    <header>
+        <img class="header_image" src="./images/lambrowJournalImage.jpg" alt="Daily NSS Journal: Alex Lambrow">
+    </header>
+
+    <!-- this section for new entry input form-->
+    <section class="new__entries">
+        <h2>Daily Journal Entry</h2>
+        <main id="container">
+            <form class="entryForm">
+                <fieldset class="fieldset">
+                    <label class="fieldset" for="entryDate">Date</label>
+                    <input type="date" name="entryDate" class="entryForm__date">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset" for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" class="entryForm__conceptsCovered">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset" for="textBody">Daily Entry</label>
+                    <textarea name="textBody" class="entryForm__textBody" rows="4">
+                        Tell me something!
+                    </textarea>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <label class="fieldset" for="dailyMood">Current Mood</label>
+                    <select name="dailyMood" class="entryForm__dailyMood">
+                        <option class="entryForm__dailyMood" value="">--choose one!--</option>
+                        <option class="entryForm__dailyMood" value="elated">#elated</option>
+                        <option class="entryForm__dailyMood" value="content">#content</option>
+                        <option class="entryForm__dailyMood" value="brainded">#brainded</option>
+                    </select>
+                </fieldset>
+                <input class="button" type="submit" onclick="alert('Thank you for your entry!')" value="Submit Entry">
+            </form>
+
+            <!-- TODO: for later -->
+            <article id="entries"></article>
+        </main>
+
+    </section>
+
+
+    <!-- this article for record of old entries -->
+    <article class="old__entries">
+        Old Entries
+    </article>
+
+
+    <!-- this footer to contain links to GitHub and copyright -->
+    <footer class="footer">
+        Footer
+    </footer>
+</body>
+</html>
