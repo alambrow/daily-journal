@@ -13,7 +13,7 @@ const database = {
             entryDate: "04/14/2021",
             conceptsCovered: "Working with GitHub Repos",
             textBody: "learned the basic workflow of GitHub; still unsure about how merging should work outside of the cloud",
-            mood: "brainded"
+            feeling: "brainded"
         },
         {
             id: 2,

@@ -2,8 +2,6 @@ import { Entries } from "./Entries.js"
 
 export const DailyJournal = () => {
     return `
-        <h1>Daily Journal</h1>
-
         <div class="entryList">
             ${ Entries() }
         </div>
@@ -13,12 +11,3 @@ export const DailyJournal = () => {
         </article>
     `
 }
-
-
-// export const DailyJournal = () => {
-//     return `
-//         <div class="entryList">
-//             ${ Entries() }
-//         </div>
-//     `
-// }
